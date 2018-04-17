@@ -1,0 +1,18 @@
+#header {
+  position: fixed;
+  height: $f68;
+  width: 100%;
+  background-color: $white;
+  text-align: center;
+  z-index: 55;
+  border-bottom: 3px solid $gray;
+  .logo {
+    position: fixed;
+    width: 100%;
+    img {
+      width: fnW(181);
+      height: $f68;
+    }
+  }
+
+}

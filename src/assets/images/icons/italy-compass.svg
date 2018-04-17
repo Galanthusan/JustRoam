@@ -1,0 +1,27 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.63 70.97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #e3530c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <title>italy-compass</title>
+  <g>
+    <circle class="cls-1" cx="30.31" cy="40.65" r="2.96" transform="translate(-17.89 24.91) rotate(-35.21)"/>
+    <line class="cls-1" x1="27.9" y1="42.36" x2="16.33" y2="50.53"/>
+    <line class="cls-1" x1="32.73" y1="38.95" x2="44.3" y2="30.78"/>
+    <circle class="cls-1" cx="30.31" cy="4.46" r="2.96"/>
+    <circle class="cls-1" cx="30.31" cy="40.66" r="28.81"/>
+    <circle class="cls-1" cx="30.31" cy="40.66" r="23.64"/>
+    <line class="cls-1" x1="30.31" y1="11.84" x2="30.31" y2="7.41"/>
+    <line class="cls-1" x1="30.31" y1="17.01" x2="30.31" y2="21.45"/>
+    <line class="cls-1" x1="30.31" y1="59.86" x2="30.31" y2="64.3"/>
+    <line class="cls-1" x1="11.1" y1="40.66" x2="6.67" y2="40.66"/>
+    <line class="cls-1" x1="53.95" y1="40.66" x2="49.52" y2="40.66"/>
+  </g>
+</svg>

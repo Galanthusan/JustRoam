@@ -1,0 +1,24 @@
+footer {
+  height: $f68;
+  border-top: 3px solid $gray;
+  text-align: center;
+
+  h2 {
+    font-family: $font-main-text;
+    font-size: $f16;
+    line-height: $f68;
+    font-weight: 500;
+    color: $dark_gray;
+    float:left;
+    margin-left: $f42;
+  }
+  h3 {
+    font-family: $font-main-text;
+    font-size: $f16;
+    line-height: $f68;
+    font-weight: 500;
+    color: $dark_gray;
+    float:right;
+    margin-right: $f42;
+  }
+}

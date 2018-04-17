@@ -1,0 +1,48 @@
+#intro {
+  width: 100%;
+  padding: $f68;
+  background: url("./../images/background/intro-bg.jpg") no-repeat center;
+  background-size:cover;
+  
+  .intro-background {
+    position: absolute;
+    width: 100%;
+    height: fnW(516);
+  }
+
+
+  .intro-content {
+    display:block;
+    margin:0 auto;
+    width:60%;
+    .icon {
+      display:block;
+      width: $f68;
+      height: $f68;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: $f42 0;
+      font-family: $font-main-text;
+      font-size: $f34;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $dark_green;
+      text-align:center;
+    }
+    
+    p {
+      font-size:$f26;
+      font-family: $font-main-text;
+      color: $dark_gray;
+    }
+    
+    .col-50 {
+      display: inline-block;
+      width: calc(50% - #{$f34});
+      margin: 0 $f16;
+    }
+
+ 
+  }
+}

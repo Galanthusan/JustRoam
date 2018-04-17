@@ -1,0 +1,21 @@
+#instagram-photos {
+  .instagram {
+    text-align: center;
+    margin-top: $f68;
+    .icon {
+      width: $f68;
+      height: $f68;
+      margin: 0 auto;
+    }
+    h1 {
+      font-family: $font-main-text;
+      font-size: $f42;
+      font-weight: bold;
+      color: $dark_green;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: $f34;
+
+    }
+  }
+}

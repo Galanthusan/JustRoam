@@ -1,0 +1,163 @@
+#country-list {
+  .country {
+    .description {
+      display: inline-block;
+      width: fnW(800);
+      height: fnW(640);
+      vertical-align: top;
+      padding: fnW(133);
+      text-align: center;
+      position: relative;
+      .icon {
+        display: block;
+        width: $f55;
+        height: $f68;
+        margin: auto;
+        margin-bottom: $f18;
+      }
+      h1 {
+        font-family: $font-main-text;
+        font-size: $f42;
+        text-transform: uppercase;
+        color: $gray;
+        text-align: center;
+        margin-bottom: $f26;
+      }
+      p {
+        font-family: $font-main-text;
+        font-size: $f21;
+        color: $gray;
+        text-align: center;
+      }
+      .get-more-btn {
+        width: $f288;
+        height: $f55;
+        background-color: $gray;
+        border-radius: 3px;
+        font-family: $font-main-text;
+        font-size: $f21;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $orange;
+        margin-top: $f55;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      
+      #dot-icon {
+        position: absolute;
+        z-index: 44;
+        &.thailand {
+          right: fnW(185);
+          bottom:fnW(180);
+        }
+        &.italy {
+         left: fnW(85);
+          bottom:fnW(365);
+        }
+        &.austria {
+          left: fnW(105);
+          bottom:fnW(380);
+        }
+        &.new-zealand {
+          right: fnW(83);
+          bottom:fnW(230);
+        }
+        &.japan {
+          right: fnW(57);
+          bottom:fnW(220);
+        }
+        .pulse-css{
+          @include circle($f18);
+          background: $light_green;
+          position: relative;
+          &:before,
+          &:after{
+            content: '';
+            @include circle($f18);
+            background-color: $light_green;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transform: scale(0.5);
+            transform-origin: center center;
+            animation: pulse-me 4s linear infinite;
+          }
+          &:after{
+            animation-delay: 2s;
+          }
+        }
+
+        @keyframes pulse-me{
+          0%{
+            transform: scale(2);
+            opacity: 0;
+          }
+          50%{
+            opacity: 0.3;
+          }
+          70%{
+            opacity: 0.1;
+          }
+          100%{
+            transform: scale(10);
+            opacity: 0;
+          }
+        }
+      }
+      
+    }
+
+    .photos-top {
+      display: inline-block;
+      width: calc(100% - #{fnW(800)});
+      background-color: darkcyan;
+      height: fnW(320);
+      vertical-align: top;
+      img {
+        display: inline-block;
+      }
+    }
+
+    &.thailand {
+      .description {
+        background: url('./../images/map/bangkok.jpg') no-repeat center;
+        background-size: cover;
+        margin-bottom: $f21;
+      }
+    }
+    &.italy {
+      .description {
+        background: url('./../images/map/bangkok.jpg') no-repeat center;
+        background-size: cover;
+        margin-bottom: $f21;
+      }
+    }
+    &.austria {
+      .description {
+        background: url('./../images/map/bangkok.jpg') no-repeat center;
+        background-size: cover;
+        margin-bottom: $f21;
+      }
+    }
+    &.new-zealand {
+      .description {
+        background: url('./../images/map/new-zealand.jpg') no-repeat center;
+        background-size: cover;
+        margin-bottom: $f21;
+      }
+    }
+    &.japan {
+      .description {
+        background: url('./../images/map/japan.jpg') no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+  

@@ -1,0 +1,29 @@
+#navigation {
+  width: 100%;
+  height: $f68;
+  background-color: $black;
+  padding: 0 $f42 0 $f42;
+  
+  .nav {
+    display: inline-block;
+    select {
+      display: inline-block;
+      width: $f233;
+      height: $f68;
+      border: none;
+      font-family: $font-main-text;
+      font-size: $f26;
+      color: $gray;
+      background: url("./../images/icons/arrow.svg") no-repeat right;
+      background-size: fnW(10);
+      -webkit-appearance: none;
+    }
+  }
+  
+  .icon {
+    display: inline-block;
+    width: $f26;
+    height: $f68;
+    float: right;
+  }
+}
