@@ -1,0 +1,212 @@
+#tour {
+  display:none;
+  width: fnW(480);
+  height: 100vh;
+  background-color: $white;
+  border-left: 3px solid $gray;
+  float: right;
+  .choose-type {
+    margin-top: fnW(400);
+    text-align: center;
+    .icon {
+      width: $f68;
+      height: $f68;
+    }
+    button {
+      display: block;
+      margin-top: $f34;
+      margin-left: $f34;
+      width: fnW(412);
+      height: $f55;
+      border: 2px solid $gray;
+      border-radius: 3px;
+      font-family: $font-main-text;
+      font-weight: bold;
+      font-size: $f21;
+      line-height: 2.7vw;
+      text-transform: uppercase;
+      color: $orange;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        background-color: $orange;
+        border: none;
+        border-radius: 3px;
+        color: $gray;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .hashtag {
+    margin-top: fnW(250);
+    margin-left: $f34;
+    margin-right: $f34;
+    text-align: center;
+    .hashtag-btn {
+      button {
+        width: $f144;
+        height: $f42;
+        margin: $f13;
+        font-family: $font-main-text;
+        font-size: $f16;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $orange;
+        border: 2px solid $gray;
+        border-radius: 3px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .tour-check-btn {
+      display: block;
+      margin-top: $f68;
+      width: fnW(412);
+      height: $f68;
+      background-color: $orange;
+      border-radius: 3px;
+      font-family: $font-main-text;
+      font-weight: bold;
+      font-size: $f21;
+      line-height: 2.7vw;
+      text-transform: uppercase;
+      color: $gray;
+      text-decoration: none;
+      text-align: center;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .tour-select {
+    .country-selected {
+      margin-top: fnW(350);
+      margin-left: $f34;
+      display: inline-block;
+     
+      .budget {
+        margin-top: $f34;
+        h1 {
+          font-family: $font-main-text;
+          font-size: $f21;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $orange;
+          margin-bottom: $f21;
+        }
+        textarea {
+          padding-left: $f21;
+          width: fnW(412);
+          height: $f55;
+          border: 2px solid $gray;
+          border-radius: 3px;
+          font-family: $font-main-text;
+          font-size: $f21;
+          line-height: fnW(45);
+          font-weight: bold;
+          color: $dark_gray;
+          -webkit-appearance: none;
+        }
+      }
+      
+      .tour-check-btn {
+        display: block;
+        margin-top: $f68;
+        width: fnW(412);
+        height: $f68;
+        background-color: $orange;
+        border-radius: 3px;
+        font-family: $font-main-text;
+        font-weight: bold;
+        font-size: $f21;
+        line-height: 2.7vw;
+        text-transform: uppercase;
+        color: $gray;
+        text-decoration: none;
+        text-align: center;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    
+    .budget-selected {
+      margin-top: $f110;
+      margin-left: $f34;
+      display: inline-block;
+      .budget {
+        h1 {
+          font-family: $font-main-text;
+          font-size: $f21;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $orange;
+          margin-bottom: $f21;
+        }
+        textarea {
+          padding-left: $f21;
+          width: fnW(412);
+          height: $f55;
+          border: 2px solid $gray;
+          border-radius: 3px;
+          font-family: $font-main-text;
+          font-size: $f21;
+          line-height: fnW(45);
+          font-weight: bold;
+          color: $dark_gray;
+          -webkit-appearance: none;
+        }
+      }
+      .people-select {
+        margin-top: $f34;
+        h1 {
+          font-family: $font-main-text;
+          font-size: $f21;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: $orange;
+          margin-bottom: $f21;
+        }
+        select {
+          display: inline-block;
+          padding-left: $f21;
+          width: fnW(412);
+          height: $f55;
+          border: 2px solid $gray;
+          border-radius: 3px;
+          font-family: $font-main-text;
+          font-size: $f21;
+          font-weight: bold;
+          color: $dark_gray;
+          background: url("./../images/icons/arrow-orange.svg") no-repeat right;
+          background-size: $f42;
+          -webkit-appearance: none;
+        }
+      }
+      .tour-check-btn {
+        display: block;
+        margin-top: $f68;
+        width: fnW(412);
+        height: $f68;
+        background-color: $orange;
+        border-radius: 3px;
+        font-family: $font-main-text;
+        font-weight: bold;
+        font-size: $f21;
+        line-height: 2.7vw;
+        text-transform: uppercase;
+        color: $gray;
+        text-decoration: none;
+        text-align: center;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+}

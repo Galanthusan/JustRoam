@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <header-component/>
+        <tour-component/>
         <video-background-component/>
         <intro-component/>
         <navigation-component/>
@@ -13,6 +14,7 @@
 
 <script>
     import HeaderComponent from './components/HeaderComponent'
+    import TourComponent from './components/TourComponent'
     import VideoBackgroundComponent from './components/VideoBackgroundComponent'
     import IntroComponent from './components/IntroComponent'
     import NavigationComponent from './components/NavigationComponent'
@@ -25,6 +27,7 @@
         name: 'App',
         components: {
             HeaderComponent,
+            TourComponent,
             VideoBackgroundComponent,
             IntroComponent,
             NavigationComponent,

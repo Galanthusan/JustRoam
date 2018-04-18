@@ -6,12 +6,27 @@
   text-align: center;
   z-index: 55;
   border-bottom: 3px solid $gray;
-  .logo {
-    position: fixed;
-    width: 100%;
-    img {
-      width: fnW(181);
-      height: $f68;
+
+  img {
+    height: $f68;
+  }
+  
+  .tour-select {
+    display: inline-block;
+    position:absolute;
+    right:0;
+    top:0;
+    width: $f288;
+    height: $f68;
+    background-color: $orange;
+    border-radius: 3px;
+    font-family: $font-main-text;
+    font-size: $f21;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $gray;
+    &:hover {
+      cursor: pointer;
     }
   }
 

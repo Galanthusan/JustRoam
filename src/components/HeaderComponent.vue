@@ -1,20 +1,25 @@
 <template>
     <header id="header">
-        <div class="logo">
-            <a href="#"><img src="./../assets/images/logo.svg" alt=""></a>
-        </div>
+        <img src="./../assets/images/logo.svg" alt="">
+        <button class="tour-select" @click="showTourComponent()">Заказать тур</button>
     </header>
 </template>
 
 
-
 <script>
-  export default {
-    name: 'HelloWorld',
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
+    import {EventBus} from './../bus.js';
+    
+    export default {
+        name: 'HelloWorld',
+        data() {
+            return {
+                msg: 'Welcome to Your Vue.js App'
+            }
+        },
+        methods: {
+            showTourComponent: function () {
+                EventBus.$emit('show-tour-component');
+            }
+        }
     }
-  }
 </script>

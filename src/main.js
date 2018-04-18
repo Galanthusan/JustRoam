@@ -8,8 +8,12 @@ import './assets/sass/style.scss'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+export const EventBus = new Vue();
+
+
 new Vue({
   el: '#app',
   components: { App },
   template: '<App/>'
 })
+
