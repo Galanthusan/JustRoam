@@ -122,6 +122,17 @@
         display: inline-block;
       }
     }
+    
+    .slider {
+      display: inline-block;
+      width: calc(100% - #{fnW(800)});
+      .thailand {
+        img {
+          width: fnW(1100);
+          height: fnW(640);
+        }
+      }
+    }
 
     &.thailand {
       .description {

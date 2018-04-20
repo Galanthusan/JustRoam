@@ -10,7 +10,7 @@
     import {EventBus} from './../bus.js';
     
     export default {
-        name: 'HelloWorld',
+        name: 'HeaderComponent',
         data() {
             return {
                 msg: 'Welcome to Your Vue.js App'

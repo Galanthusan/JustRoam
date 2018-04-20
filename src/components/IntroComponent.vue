@@ -20,7 +20,7 @@
 
 <script>
     export default {
-        name: 'HelloWorld',
+        name: 'IntroComponent',
         data () {
             return {
                 msg: 'Welcome to Your Vue.js App'

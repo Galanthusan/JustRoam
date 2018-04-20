@@ -1,0 +1,76 @@
+[
+  {
+    "url": "thailand-compass.svg",
+    "class": "thailand",
+    "name": "Таиланд",
+    "city": "Бангкок,",
+    "description": "Здесь вам чудесный старый город с сотней буддийских храмов и современный деловой центр с крутыми небоскребами.",
+    "price_low": 70,
+    "price_high": 200,
+    "hashtags": [
+      "tropics",
+      "sea",
+      "palm"
+    ]
+  },
+  {
+    "url": "italy-compass.svg",
+    "icon": "../assets/images/icons/italy-compass.svg",
+    "class": "italy",
+    "name": "Италия",
+    "city": "Бергамо,",
+    "description": "Это один из многих совершенно удивительных, очаровательных, волшебных исторических городов Италии, которые просто невозможно не влюбиться.",
+    "price_low": 250,
+    "price_high": 750,
+    "hashtags": [
+      "architecture",
+      "mountains",
+      "hills",
+      "sea"
+    ]
+  },
+  {
+    "url": "austria-compass.svg",
+    "icon": "../assets/images/icons/italy-compass.svg",
+    "class": "austria",
+    "name": "Австрия",
+    "city": "Зальцбург",
+    "price_low": 100,
+    "price_high": 500,
+    "hashtags": [
+      "river",
+      "sea",
+      "mountains",
+      "catacombs"
+    ],
+    "description": "Живет в Зальцбурге всего 150 000 человек, но это не помешало городу иметь отличную троллейбусную сеть и постоянно ее развивать!"
+  },
+  {
+    "url": "new-zealand-compass.svg",
+    "icon": "../assets/images/icons/italy-compass.svg",
+    "class": "new-zealand",
+    "name": "Новая Зеландия",
+    "description": "В представлении людей Новая Зеландия — это страна с фантастической природой, красивыми бухтами, райскими пляжами и прекрасными удобными городами.",
+    "price_low": 100,
+    "price_high": 300,
+    "hashtags": [
+      "island",
+      "sea",
+      "mountains"
+    ]
+  },
+  {
+    "url": "japan-compass.svg",
+    "icon": "../assets/images/icons/italy-compass.svg",
+    "class": "japan",
+    "name": "Япония",
+    "city": "Токио,",
+    "description": "Говорят, японцы очень переживают, что не могут помочь и делают вид, что не слышат. Такое же поведение будет, если начать фотографировать японца без разрешения.",
+    "price_low": 75,
+    "price_high": 500,
+    "hashtags": [
+      "island",
+      "ocean"
+    ]
+  }
+]

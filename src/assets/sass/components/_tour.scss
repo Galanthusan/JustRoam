@@ -1,12 +1,17 @@
 #tour {
   display:none;
   width: fnW(480);
+  position:fixed;
+  right:0;
+  top:$f68;
   height: 100vh;
   background-color: $white;
   border-left: 3px solid $gray;
+  z-index:99999;
   float: right;
+  padding: 0 $f34 0;
   .choose-type {
-    margin-top: fnW(400);
+    margin-top: fnW(300);
     text-align: center;
     .icon {
       width: $f68;
@@ -15,7 +20,6 @@
     button {
       display: block;
       margin-top: $f34;
-      margin-left: $f34;
       width: fnW(412);
       height: $f55;
       border: 2px solid $gray;
@@ -41,8 +45,6 @@
   
   .hashtag {
     margin-top: fnW(250);
-    margin-left: $f34;
-    margin-right: $f34;
     text-align: center;
     .hashtag-btn {
       button {
@@ -56,6 +58,10 @@
         color: $orange;
         border: 2px solid $gray;
         border-radius: 3px;
+        &.checked {
+          background-color:$orange;
+          color:$white;
+        }
         &:hover {
           cursor: pointer;
         }
@@ -84,34 +90,8 @@
   
   .tour-select {
     .country-selected {
-      margin-top: fnW(350);
-      margin-left: $f34;
+      margin-top: fnW(200);
       display: inline-block;
-     
-      .budget {
-        margin-top: $f34;
-        h1 {
-          font-family: $font-main-text;
-          font-size: $f21;
-          text-transform: uppercase;
-          font-weight: bold;
-          color: $orange;
-          margin-bottom: $f21;
-        }
-        textarea {
-          padding-left: $f21;
-          width: fnW(412);
-          height: $f55;
-          border: 2px solid $gray;
-          border-radius: 3px;
-          font-family: $font-main-text;
-          font-size: $f21;
-          line-height: fnW(45);
-          font-weight: bold;
-          color: $dark_gray;
-          -webkit-appearance: none;
-        }
-      }
       
       .tour-check-btn {
         display: block;
@@ -132,11 +112,36 @@
           cursor: pointer;
         }
       }
+      .checked-country {
+        h1 {
+          display: block;
+          margin-top: $f34;
+          width: fnW(412);
+          height: $f55;
+          border: 2px solid $gray;
+          border-radius: 3px;
+          font-family: $font-main-text;
+          font-weight: bold;
+          font-size: $f16;
+          line-height: 2.7vw;
+          text-transform: uppercase;
+          color: $orange;
+          text-decoration: none;
+          text-align: center;
+
+          &:hover {
+            background-color: $orange;
+            border: none;
+            border-radius: 3px;
+            color: $gray;
+            cursor: pointer;
+          }
+        }
+      }
     }
     
     .budget-selected {
-      margin-top: $f110;
-      margin-left: $f34;
+      margin-top: fnW(350);
       display: inline-block;
       .budget {
         h1 {
@@ -147,7 +152,7 @@
           color: $orange;
           margin-bottom: $f21;
         }
-        textarea {
+        input {
           padding-left: $f21;
           width: fnW(412);
           height: $f55;
@@ -158,33 +163,8 @@
           line-height: fnW(45);
           font-weight: bold;
           color: $dark_gray;
-          -webkit-appearance: none;
-        }
-      }
-      .people-select {
-        margin-top: $f34;
-        h1 {
-          font-family: $font-main-text;
-          font-size: $f21;
-          text-transform: uppercase;
-          font-weight: bold;
-          color: $orange;
-          margin-bottom: $f21;
-        }
-        select {
-          display: inline-block;
-          padding-left: $f21;
-          width: fnW(412);
-          height: $f55;
-          border: 2px solid $gray;
-          border-radius: 3px;
-          font-family: $font-main-text;
-          font-size: $f21;
-          font-weight: bold;
-          color: $dark_gray;
-          background: url("./../images/icons/arrow-orange.svg") no-repeat right;
-          background-size: $f42;
-          -webkit-appearance: none;
+          background-size: $f34;
+          
         }
       }
       .tour-check-btn {
@@ -206,7 +186,111 @@
           cursor: pointer;
         }
       }
+      .checked-budget {
+        h1 {
+          display: block;
+          margin-top: $f34;
+          width: fnW(412);
+          height: $f55;
+          border: 2px solid $gray;
+          border-radius: 3px;
+          font-family: $font-main-text;
+          font-weight: bold;
+          font-size: $f16;
+          line-height: 2.7vw;
+          text-transform: uppercase;
+          color: $orange;
+          text-decoration: none;
+          text-align: center;
+
+          &:hover {
+            background-color: $orange;
+            border: none;
+            border-radius: 3px;
+            color: $gray;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
+  .question-form {
+    margin-top: fnW(150);
+    .form {
+      h1 {
+        font-family: $font-main-text;
+        font-size: $f21;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $orange;
+        margin-bottom: $f21;
+      }
+      input {
+        padding-left: $f21;
+        width: fnW(412);
+        height: $f55;
+        border: 2px solid $gray;
+        border-radius: 3px;
+        font-family: $font-main-text;
+        font-size: $f21;
+        line-height: fnW(45);
+        font-weight: bold;
+        color: $dark_gray;
+        background-size: $f34;
+        margin-bottom: $f34;
+      }
+    }
+    .tour-check-btn {
+      display: block;
+      margin-top: $f68;
+      width: fnW(412);
+      height: $f68;
+      background-color: $orange;
+      border-radius: 3px;
+      font-family: $font-main-text;
+      font-weight: bold;
+      font-size: $f21;
+      line-height: 2.7vw;
+      text-transform: uppercase;
+      color: $gray;
+      text-decoration: none;
+      text-align: center;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  } 
   
+  .contact-message {
+    margin-top: fnW(300);
+    h1 {
+      font-family: $font-main-text;
+      font-size: $f26;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $orange;
+      margin-bottom: $f21;
+      text-align: center;
+      line-height: $f42;
+    }
+    .close-btn {
+      display: block;
+      margin-top: $f68;
+      width: fnW(412);
+      height: $f68;
+      background-color: $orange;
+      border-radius: 3px;
+      font-family: $font-main-text;
+      font-weight: bold;
+      font-size: $f21;
+      line-height: 2.7vw;
+      text-transform: uppercase;
+      color: $gray;
+      text-decoration: none;
+      text-align: center;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
